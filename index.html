@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mathew's Animated To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-gradient"></div>
+
+  <main class="app">
+    <header>
+      <h1>✨ Mathew's To-Do List</h1>
+      <p>Type a task and press Enter to add it.</p>
+    </header>
+
+    <section class="input-row">
+      <input
+        id="taskInput"
+        type="text"
+        placeholder="What do you need to do?"
+        autocomplete="off"
+      />
+      <button id="addBtn">Add</button>
+    </section>
+
+    <ul id="taskList" class="task-list"></ul>
+
+    <footer>
+      <span id="taskCount">0 tasks</span>
+      <button id="clearCompleted">Clear completed</button>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
